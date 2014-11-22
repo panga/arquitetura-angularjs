@@ -1,6 +1,0 @@
-/node_modules
-/dist
-/.tmp
-/.grunt
-/*.cache
-/test/coverage
