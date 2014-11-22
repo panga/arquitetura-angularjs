@@ -1,0 +1,46 @@
+[{
+	"id": 1,
+	"name": "Leonardo Loch Zanivan",
+	"gender": "MALE",
+	"birthDate": "1989-07-04",
+	"friends": [{
+		"id": 3
+	}],
+	"timeline": [{
+		"id": 1
+	}, {
+		"id": 2
+	}, {
+		"id": 3
+	}, {
+		"id": 4
+	}]
+}, {
+	"id": 2,
+	"name": "Rafael da Silva",
+	"gender": "MALE",
+	"birthDate": "1990-02-09",
+	"friends": [],
+	"timeline": [{
+		"id": 5
+	}, {
+		"id": 6
+	}]
+}, {
+	"id": 3,
+	"name": "Ana Cláudia da Silva",
+	"gender": "FEMALE",
+	"birthDate": "1988-01-01",
+	"friends": [{
+		"id": 1
+	}],
+	"timeline": [{
+		"id": 1
+	}, {
+		"id": 2
+	}, {
+		"id": 3
+	}, {
+		"id": 4
+	}]
+}]

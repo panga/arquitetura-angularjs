@@ -1,0 +1,7 @@
+{
+  "directory": "app/libs",
+  "libsPath": "libs",
+  "appPath": "app",
+  "testPath": "test",
+  "distPath": "dist"
+}

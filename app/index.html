@@ -1,0 +1,118 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Social Network</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!--INJECT STYLES-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!--/INJECT STYLES-->
+</head>
+
+<body>
+    <div class="site-loading" ng-show="false">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="root" class="ng-cloak">
+        <div id="cv-container" ng-controller="MenuCtrl">
+            <nav class="navbar navbar-inverse navbar-fixed-top cv-navbar" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed">
+                            <span class="sr-only"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo.png" width="57" height="43" alt="Logo" />
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse cv-navbar-collapse" collapse="isCollapsed">
+                        <div class="cv-sidebar">
+                            <ul class="nav cv-nav-sidebar">
+                                <li class="cv-divider"></li>
+                                <li ui-sref-active="active">
+                                    <a ui-sref="home" ng-click="isCollapsed=true"><i class="glyphicon glyphicon-home"></i> Home <i class="cv-caret-left cv-position-caret"></i></a>
+                                </li>
+                                <li class="cv-divider"></li>
+                                <li ui-sref-active="active">
+                                    <a ui-sref="friends" ng-click="isCollapsed=true"><i class="fa fa-users"></i> Friends <i class="cv-caret-left cv-position-caret"></i></a>
+                                </li>
+                                <li class="cv-divider"></li>
+                                <li ui-sref-active="active">
+                                    <a ui-sref="people" ng-click="isCollapsed=true"><i class="glyphicon glyphicon-search"></i> People <i class="cv-caret-left cv-position-caret"></i></a>
+                                </li>
+                                <li class="cv-divider"></li>
+                            </ul>
+                        </div>
+
+                        <ul class="nav navbar-nav navbar-right navbar-user">
+                            <li class="dropdown user-dropdown">
+                                <a href="" class="dropdown-toggle cv-dropdown" data-toggle="dropdown">{{ user.person.name }}<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a ui-sref="home" ng-click="isCollapsed=true"><i class="glyphicon glyphicon-off"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="cv-page-container">
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+
+    <!--INJECT SCRIPTS-->
+    <script src="libs/jquery/jquery.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="libs/log/log.js"></script>
+    <script src="libs/lodash/dist/lodash.js"></script>
+    <script src="libs/moment/moment.js"></script>
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-messages/angular-messages.js"></script>
+    <script src="libs/angular-animate/angular-animate.js"></script>
+    <script src="libs/angular-cookies/angular-cookies.js"></script>
+    <script src="libs/angular-sanitize/angular-sanitize.js"></script>
+    <script src="libs/angular-i18n/angular-locale_pt-br.js"></script>
+    <script src="libs/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="libs/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+    <script src="libs/angular-busy/dist/angular-busy.js"></script>
+    <script src="libs/angular-loading-bar/build/loading-bar.js"></script>
+    <script src="libs/angular-local-storage/angular-local-storage.js"></script>
+    <script src="libs/angularjs-rails-resource/angularjs-rails-resource.js"></script>
+    <script src="libs/angular-uuid/uuid.js"></script>
+    <script src="libs/angular-mocks/angular-mocks.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config/local.js"></script>
+    <script src="scripts/config/config.js"></script>
+    <script src="scripts/config/routes.js"></script>
+    <script src="scripts/services/log.js"></script>
+    <script src="scripts/models/people.js"></script>
+    <script src="scripts/models/person.js"></script>
+    <script src="scripts/models/post.js"></script>
+    <script src="scripts/models/user.js"></script>
+    <script src="components/loading/loading.js"></script>
+    <script src="states/error/error.js"></script>
+    <script src="states/friends/friends.js"></script>
+    <script src="states/home/home.js"></script>
+    <script src="states/menu/menu.js"></script>
+    <script src="states/people/people.js"></script>
+    <script src="mocks/mock-api.js"></script>
+    <script src="mocks/people.js"></script>
+    <script src="mocks/person.js"></script>
+    <script src="mocks/post.js"></script>
+    <script src="mocks/user.js"></script>
+    <!--/INJECT SCRIPTS-->
+</body>
+
+</html>

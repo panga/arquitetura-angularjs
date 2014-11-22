@@ -1,0 +1,43 @@
+{
+  "javascript": {
+    "external": [
+      "libs/jquery/jquery.js",
+      "libs/bootstrap/dist/js/bootstrap.js",
+      "libs/log/log.js",
+      "libs/lodash/dist/lodash.js",
+      "libs/moment/moment.js",
+      "libs/angular/angular.js",
+      "libs/angular-messages/angular-messages.js",
+      "libs/angular-animate/angular-animate.js",
+      "libs/angular-cookies/angular-cookies.js",
+      "libs/angular-sanitize/angular-sanitize.js",
+      "libs/angular-i18n/angular-locale_pt-br.js",
+      "libs/angular-ui-router/release/angular-ui-router.js",
+      "libs/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js",
+      "libs/angular-busy/dist/angular-busy.js",
+      "libs/angular-loading-bar/build/loading-bar.js",
+      "libs/angular-local-storage/angular-local-storage.js",
+      "libs/angularjs-rails-resource/angularjs-rails-resource.js",
+      "libs/angular-uuid/uuid.js",
+      "libs/angular-mocks/angular-mocks.js"
+    ],
+    "externalExcludeFromBuild": [
+      "libs/angular-mocks/angular-mocks.js"
+    ],
+    "app": [
+      "scripts/app.js",
+      "scripts/config/local.js",
+      "scripts/config/*.js",
+      "scripts/services/*.js",
+      "scripts/models/*.js",
+      "components/**/*.js",
+      "states/**/*.js"
+    ],
+    "appExcludeFromBuild": [
+      "scripts/config/local.js"
+    ]
+  },
+  "css": [
+    "styles/**/*.css"
+  ]
+}

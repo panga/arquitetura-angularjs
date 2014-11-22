@@ -1,0 +1,212 @@
+#cv-container {
+  padding-top: 50px;
+  padding-left: 0;
+}
+#cv-page-container {
+  width: 100%;
+  padding: 5px 15px;
+}
+.cv-text-red {
+    color:#ac2925;
+}
+.cv-text-blue {
+    color:#428BCA;
+}
+.cv-align-center {
+    text-align: center;
+}
+.cv-title {
+    color: #428bca;
+    font-weight: bold;
+}
+.cv-caret-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #fff;
+}
+.cv-position-caret {
+   float:right;
+   margin-right: -18px;
+}
+.cv-caret-left {
+    display: none;
+}
+.cv-navbar {
+    background-color: #29547C;
+    border-bottom-color: #29547C !important;
+}
+.cv-nav-sidebar {
+    margin-right: -15px;
+    margin-bottom: 20px;
+    margin-left: -15px;
+}
+.cv-nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #65AEED;
+}
+.cv-nav-sidebar > .active > a {
+    color: #fff;
+    background-color: #428bca;
+}
+.cv-dropdown:focus, .cv-dropdown:visited {
+    background-color: #428bca !important;
+}
+.cv-divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #264D70;
+}
+.cv-well-red {
+  color: #ffffff;
+  background-color: #428BCA;
+  border-color: #3670A0;
+}
+.cv-sale {
+    text-align: center;
+}
+.cv-sale > h1 {
+    font-size: 3.5em;
+}
+.cv-sale > h1, .cv-sale > h2, .cv-sale h6 {
+    line-height: 0.2em;
+}
+.cv-sale-inform {
+    border-left: 1px solid #ffffff;
+}
+.cv-sale-inform > h1, .cv-sale-inform > h2, .cv-sale-inform h5 {
+    line-height: 2em;
+}
+.cv-btn-lg {
+    width: 95%;
+    height: 140px;
+    padding: 30px;
+    line-height: 1.33;
+    background: #c9c9c9;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    color: #999999;
+    margin-bottom: 20px;
+}
+.cv-btn-lg > i {
+   font-size: 2.7em !important;
+}
+.cv-btn-lg > span {
+    display: block;
+}
+.cv-btn-lg:hover {
+    background: #29547C;
+    border: 1px solid #244868;
+    color: #ffffff;
+}
+.cv-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.cv-list > li {
+    position: relative;
+    display: block;
+    padding: 10px 5px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 0.95em
+}
+.cv-list > li:first-child {
+  border-top: none;
+}
+.cv-list > li:last-child {
+  margin-bottom: 0;
+}
+.cv-list-footer {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.cv-form-label {
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+/*
+ *boostrap
+ */
+.navbar-toggle {
+    border-color: #428bca !important;
+}
+.navbar-toggle:hover, .navbar-toggle:focus {
+    background-color: #428bca !important;
+}
+.navbar-collapse {
+    border: none !important;
+}
+.navbar-brand {
+    color:#ffffff !important;
+}
+.navbar-brand img {
+    margin-top: -8px;
+}
+
+/*
+ * Mínima resolução para inserir menu vertical
+ */
+@media (min-width: 768px) {
+    #cv-container {
+        padding-left: 225px;
+    }
+    #cv-page-container {
+        padding: 15px 25px;
+    }
+    .cv-sidebar {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 17px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #29547C;
+
+    }
+    .cv-nav-sidebar > li > a {
+        width: 225px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .navbar-collapse {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .active > a > .cv-caret-left {
+        display: block !important;
+    }
+    .cv-h-center {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .cv-sale > h2 {
+        font-size:1.4em;
+    }
+
+    .cv-btn-lg > span {
+        font-size: 0.8em !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .cv-sale > h2 {
+        font-size: 1.4em;
+    }
+    .cv-sale-inform > h5{
+        font-size: 0.85em !important;
+    }
+}
