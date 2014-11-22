@@ -7,7 +7,7 @@ Entre os recursos utilizados posso citar o [LESS](http://lesscss.org/), mecanism
 
 Para que a aplicação funcione corretamente é necessário que as dependências do [NodeJS](http://nodejs.org/) sejam instaladas, para isto, abra um terminal, navegue até o diretório raiz da aplicação e execute o comando `npm install`.  
 
-[Demonstração](https://panga.github.io/angularjs-architecture)
+[Demonstração](https://panga.github.io/arquitetura-angularjs)
 
 ### Estrutura de diretórios e arquivos
 
